@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* carousel functionality */
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-5420px);
+  }
+}
+
+.carousel-container{
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  white-space: nowrap;
+  /* animation: 30s slide infinite linear; */
+}
+
+.carousel img{
+  margin: 20px;
+}
+
