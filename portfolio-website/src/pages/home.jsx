@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "../Components/carousel";
-import Project_Preview from "../Components/project_prview";
+import Project_Preview from "../Components/project_preview";
 
 function Home() {
     return(
@@ -20,13 +20,19 @@ function Home() {
                 <h1 className= "mb-12 w-screen text-center text-6xl">Coding Projects</h1>
                 <Project_Preview projectName={"Pixel Harvester"} projectImg={"src/assets/Pixel_Harvester.png"} projectCopy={
                     "My phase 5 graduation project for the Flatiron School was a webscrapping site that used image processing to scrape images from other websites. I used selenium to progrmatically open and screen shot other websites. The Python pillow library to analyse the images. Flask to temporarily store the images and send them to the front end. The front end was built with React and Tailwind."
-                }/>
+                } pageLink = "/pixel_harvester"/>
                 <Project_Preview projectName={"Battle Memes"} projectImg={"src/assets/Battlememes.png"} projectCopy={
                     "The phase 4 project at the Flatiron School was a group project where we created a full stack application using React on the front end and Flask on the back end. The website allows you to post images with prompts for other users to caption. Once users have captioned your post you can select your favorite one and it will be dispalyed for everyone to see on the website."
-                }/>
+                } pageLink = "/battlememes"/>
                 <Project_Preview projectName={"Toy Tanks"} projectImg={"src/assets/Toy_Tanks.png"} projectCopy={
                     "For my phase 3 project I created a top down tank game in Python using the Pygame library. This game was inspired by the Wii Play Tanks game I played as a kid. The game features several types of enemies, bullet ricochet, lives and 5 levels of increasing difficulty."
-                }/>
+                } pageLink = "/toy_tanks"/>
+                <Project_Preview projectName={"CSS Color Selector"} projectImg={"src/assets/CSS_Color_Selector.png"} projectCopy={
+                    "CSS Color Selector was created as the phase 2 group project for Flatiron School. The website allows you to create CSS color pallet the see in real time some website examples updateing below. You can also save color pallets to revisit at a later date. The project uses React for the front end and a DB-Json for as a server."
+                } pageLink = "/css_color_selector"/>
+                <Project_Preview projectName={"Exercise Generator"} projectImg={"src/assets/Exercise_Planner.png"} projectCopy={
+                    "My first group project for the Flatiron School was an exercise generator that feeds from a public exercise API. We used React and vanilla CSS to create the front end. The site allows you to filter exercises and then save them to a workout plan at the bottom of the page. "
+                } pageLink = "/exercise_generator"/>
             </div>
         </div>
     )
