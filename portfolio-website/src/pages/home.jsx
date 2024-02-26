@@ -9,8 +9,9 @@ function Home() {
                 <h1 className = "text-6xl text-center w-full">Welcome to my Portfolio</h1>
             </div>
             <div className="flex w-full">
-                <img className = "w-3/6" src="./src/assets/IMG_1567.JPG"/>
-                <div className = "flex flex-wrap w-3/4 content-center items-center">
+                <img className = "w-3/6" src="./src/assets/Headshot.JPG"/>
+                <div className = "flex flex-wrap w-3/4 content-center items-center bg-yellow-200 m-10">
+                    <div className = "outer-pin"><div className = "push-pin"></div></div>
                     <h2 className = "w-full text-center text-5xl">About Me</h2>
                     <p className = "w-full text-center m-4 text-xl">My name is Ethan Hessler and I am a recent graduate of the Flatiron Software Engineering Boot Camp. Prior to attending bootcamp I worked in retail as a buyer/planner/merchandiser. The things I liked most about my jobs in retail were the program/excel/system aspects of the job which is what led me to pursue programming. Whilst at Flatiron I learned the necessary technologies to create a full stack CRUD application. I created a total of five projects while in school which are all showcased on this site. I am currently looking for job opportunities in the programming space. I also have a section on this iste dedeictaed to some of the sewing projects I work on along side programming.</p>
                 </div>

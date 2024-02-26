@@ -3,9 +3,28 @@
 @tailwind utilities;
 
 * {
-  font-family: Playfair;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
+body {
+  background-image: url("src/assets/pexels-monstera-production-7794364.jpeg");
+}
+
+.push-pin {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.outer-pin {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: darkred;
+}
 
 /* carousel functionality */
 @keyframes slide {
@@ -29,5 +48,26 @@
 
 .carousel img{
   margin: 20px;
+}
+
+/* track borders */
+.outer-shell {
+  border-style: dashed;
+  border-width: 2px;
+  border-color: black;
+  height: 100%;
+}
+
+.mid-shell {
+  padding: 3px;
+  background-color: black;
+  height: 100%;
+}
+
+.inner-shell {
+  border-style: dashed;
+  border-width: 3px;
+  border-color: black;
+  height: 100%;
 }
 
