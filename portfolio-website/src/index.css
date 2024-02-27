@@ -12,18 +12,49 @@ body {
   background-image: url("src/assets/pexels-monstera-production-7794364.jpeg");
 }
 
-.push-pin {
+.pin-surround {
+  margin: 8px;
+}
+
+
+.inner-left-pin {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background-color: red;
 }
 
-.outer-pin {
+.outer-left-pin {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: darkred;
+}
+
+.inner-right-pin {
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.outer-right-pin {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: darkred;
+}
+
+.sticky-note {
+  box-shadow: 10px 10px 5px rgb(0,0,0,.4);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Alkatra", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
 
 /* carousel functionality */
@@ -38,6 +69,8 @@ body {
 
 .carousel-container{
   overflow: hidden;
+  background-color: white;
+  box-shadow: 10px 10px 5px rgb(0,0,0,.4);
 }
 
 .carousel {
@@ -55,19 +88,16 @@ body {
   border-style: dashed;
   border-width: 2px;
   border-color: black;
-  height: 100%;
 }
 
 .mid-shell {
   padding: 3px;
   background-color: black;
-  height: 100%;
 }
 
 .inner-shell {
   border-style: dashed;
   border-width: 3px;
   border-color: black;
-  height: 100%;
 }
 

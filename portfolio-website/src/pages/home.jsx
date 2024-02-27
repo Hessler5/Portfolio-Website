@@ -5,20 +5,27 @@ import Project_Preview from "../Components/project_preview";
 function Home() {
     return(
         <div>
-            <div className ="flex content-center items-center h-screen">
-                <h1 className = "text-6xl text-center w-full">Welcome to my Portfolio</h1>
+            <div className ="flex content-center justify-center items-center h-screen">
+                <div className = "sticky-note bg-yellow-200 w-72 h-72 flex content-center items-center">
+                    <h1 className = "text-6xl text-center w-full">Welcome to my Portfolio</h1>
+                </div>
             </div>
             <div className="flex w-full">
                 <img className = "w-3/6" src="./src/assets/Headshot.JPG"/>
-                <div className = "flex flex-wrap w-3/4 content-center items-center bg-yellow-200 m-10">
-                    <div className = "outer-pin"><div className = "push-pin"></div></div>
+                <div className = "sticky-note flex flex-wrap w-3/4 h-1/4 content-center items-center bg-white 0 m-10">
+                    <div className = "pin-container flex justify-between w-full">
+                        <div className = "pin-surround"><div className = "outer-left-pin"><div className = "inner-left-pin"></div></div></div>
+                        <div className = "pin-surround"><div className = "outer-right-pin"><div className = "inner-right-pin"></div></div></div>
+                    </div>
                     <h2 className = "w-full text-center text-5xl">About Me</h2>
                     <p className = "w-full text-center m-4 text-xl">My name is Ethan Hessler and I am a recent graduate of the Flatiron Software Engineering Boot Camp. Prior to attending bootcamp I worked in retail as a buyer/planner/merchandiser. The things I liked most about my jobs in retail were the program/excel/system aspects of the job which is what led me to pursue programming. Whilst at Flatiron I learned the necessary technologies to create a full stack CRUD application. I created a total of five projects while in school which are all showcased on this site. I am currently looking for job opportunities in the programming space. I also have a section on this iste dedeictaed to some of the sewing projects I work on along side programming.</p>
                 </div>
             </div>
             <Carousel />
             <div className = "flex flex-wrap content-center items-center justify-center">
-                <h1 className= "mb-12 w-screen text-center text-6xl">Coding Projects</h1>
+                <div className = "sticky-note bg-yellow-200 w-72 h-72 flex content-center items-center mb-12">
+                    <h1 className= "w-screen text-center text-6xl">Coding Projects</h1>
+                </div>
                 <Project_Preview projectName={"Pixel Harvester"} projectImg={"src/assets/Pixel_Harvester.png"} projectCopy={
                     "My phase 5 graduation project for the Flatiron School was a webscrapping site that used image processing to scrape images from other websites. I used selenium to progrmatically open and screen shot other websites. The Python pillow library to analyse the images. Flask to temporarily store the images and send them to the front end. The front end was built with React and Tailwind."
                 } pageLink = "/pixel_harvester"/>
