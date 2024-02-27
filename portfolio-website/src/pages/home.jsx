@@ -23,8 +23,10 @@ function Home() {
             </div>
             <Carousel />
             <div className = "flex flex-wrap content-center items-center justify-center">
-                <div className = "sticky-note bg-yellow-200 w-72 h-72 flex content-center items-center mb-12">
-                    <h1 className= "w-screen text-center text-6xl">Coding Projects</h1>
+                <div className = "w-full flex justify-center">
+                    <div className = "sticky-note bg-yellow-200 w-72 h-72 flex content-center items-center mb-12">
+                        <h1 className= "w-screen text-center text-6xl">Coding Projects</h1>
+                    </div>
                 </div>
                 <Project_Preview projectName={"Pixel Harvester"} projectImg={"src/assets/Pixel_Harvester.png"} projectCopy={
                     "My phase 5 graduation project for the Flatiron School was a webscrapping site that used image processing to scrape images from other websites. I used selenium to progrmatically open and screen shot other websites. The Python pillow library to analyse the images. Flask to temporarily store the images and send them to the front end. The front end was built with React and Tailwind."
