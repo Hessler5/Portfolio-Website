@@ -10,7 +10,7 @@ function Home() {
                     <h1 className = "text-6xl text-center w-full">Welcome to my Portfolio</h1>
                 </div>
             </div>
-            <div className="flex w-full">
+            <div className="flex w-full items-center">
                 <img className = "w-3/6" src="./src/assets/Headshot.JPG"/>
                 <div className = "sticky-note flex flex-wrap w-3/4 h-1/4 content-center items-center bg-white 0 m-10">
                     <div className = "pin-container flex justify-between w-full">
