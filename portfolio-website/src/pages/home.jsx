@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import Carousel from "../Components/carousel";
 import Project_Preview from "../Components/project_preview";
+import PersonalProject from "../Components/personal_projects";
 
 function Home() {
     const [menuOpen, setMenuOpen] = useState(false)
@@ -75,6 +76,27 @@ function Home() {
                     </div>
                 </div>
             </div>
+            <PersonalProject 
+            projectTitle={"Scrap Denim Pants"}
+            description={"Here is a pair of jeans I created from excess scrap left over from other projects."}
+            img1={"src/assets/Denim_Pants_1.jpg"}
+            img2={"src/assets/Denim_Pants_2.jpg"}
+            img3={"src/assets/Denim_Pants_3.jpg"}
+            />
+            <PersonalProject 
+            projectTitle={"Sewing Class"}
+            description={"Here is a pair of jeans I created from excess scrap left over from other projects."}
+            img1={"src/assets/Sewing_Class_1.JPG"}
+            img2={"src/assets/Sewing_Class_2.JPG"}
+            img3={"src/assets/Sewing_Class_3.JPG"}
+            />
+            <PersonalProject 
+            projectTitle={"Sock Pillows!"}
+            description={"Using excess sample socks at my previous job I fashioned pillows by cutting up and then re-sewing them together."}
+            img1={"src/assets/Sock_Pillows_2.JPG"}
+            img2={"src/assets/Sock_Pillows_1.JPG"}
+            img3={"src/assets/Sock_Pillows_3.JPG"}
+            />
         </div>
     )
 }

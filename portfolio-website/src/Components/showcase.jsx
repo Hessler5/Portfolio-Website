@@ -49,22 +49,21 @@ function Showcase( {videoSource, websiteLink = false, BlogLink = false, GithubLi
                 </div>:
                 null}
             </div>
-
-                    <div className = "sticky-note w-5/6 p-5 bg-white mb-6 flex flex-wrap jusify-center">
-                        <div className = "pin-container flex justify-between w-full">
-                            <div className = "pin-surround"><div className = "outer-left-pin"><div className = "inner-left-pin"></div></div></div>
-                            <h1 className = "m-5 text-center w-full text-6xl">{projectTitle}</h1>
-                            <div className = "pin-surround"><div className = "outer-right-pin"><div className = "inner-right-pin"></div></div></div>
-                        </div>
-                        <p>{description}</p>
-                        <div className = "flex w-full justify-center">
-                            <div className = "m-3 outer-shell w-32 h-12">
-                                <div className = "mid-shell w-full h-full">
-                                    <button className = "text-xl bg-white w-full h-full"><Link to={"/"}>Back Home</Link></button>
-                                </div>
-                            </div>
+            <div className = "sticky-note w-5/6 p-5 bg-white mb-6 flex flex-wrap jusify-center">
+                <div className = "pin-container flex justify-between w-full">
+                    <div className = "pin-surround"><div className = "outer-left-pin"><div className = "inner-left-pin"></div></div></div>
+                    <h1 className = "m-5 text-center w-full text-6xl">{projectTitle}</h1>
+                    <div className = "pin-surround"><div className = "outer-right-pin"><div className = "inner-right-pin"></div></div></div>
+                </div>
+                <p className="text-center">{description}</p>
+                <div className = "flex w-full justify-center">
+                    <div className = "m-3 outer-shell w-32 h-12">
+                        <div className = "mid-shell w-full h-full">
+                            <button className = "text-xl bg-white w-full h-full"><Link to={"/"}>Back Home</Link></button>
                         </div>
                     </div>
+                </div>
+            </div>
         </div>
     )
 }
