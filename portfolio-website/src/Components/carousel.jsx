@@ -3,7 +3,7 @@ import React from "react";
 function Carousel () {
     return (
         <div className = "flex content-center justify-center items-center h-screen flex-wrap">
-            <h1 className= "sticky-note w-72 h-72 flex content-center items-center text-6xl justify-center mb-6 bg-lime-400">Skills</h1>
+            <h1 id="skills" className= "sticky-note w-72 h-72 flex content-center items-center text-6xl justify-center mb-6 bg-lime-400">Skills</h1>
             <div className = "carousel-container">
                 <div className = "carousel h-4/6">
                     <img className = "h-96" src="https://t3.ftcdn.net/jpg/03/21/24/30/360_F_321243084_GstfWflk1eTLlzUdRZ5mjoP5IG1iCc8J.jpg"/>

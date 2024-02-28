@@ -1,16 +1,40 @@
-import React from "react";
+import React, {useState} from "react";
 import Carousel from "../Components/carousel";
 import Project_Preview from "../Components/project_preview";
 
 function Home() {
+    const [menuOpen, setMenuOpen] = useState(false)
+
+    function handleMenu() {
+        setMenuOpen(!menuOpen)
+    }
+
     return(
         <div>
+            {menuOpen?
+            <div className = "z-10 fixed right-3 top-3 outer-shell w-48">
+                <div className = "mid-shell w-full h-full">
+                    <div className = "text-center underline text-xl bg-white w-full h-full p-3">
+                        <button className = "absolute no-underline right-4 top-3" onClick={handleMenu}>X</button>
+                        <h5><a href="#about">About</a></h5>
+                        <h5><a href="#skills">skills</a></h5>
+                        <h5><a href="#coding-projects">Coding Projects</a></h5>
+                        <h5><a href="#personal-projects">Personal Projects</a></h5>
+                    </div>
+                </div>
+            </div>
+            : 
+            <div className = "z-10 fixed right-3 top-3 outer-shell w-28 h-14">
+                <div className = "mid-shell w-full h-full">
+                    <button className = "text-xl bg-white w-full h-full" onClick={handleMenu}>Menu</button>
+                </div>
+            </div>}
             <div className ="flex content-center justify-center items-center h-screen">
                 <div className = "sticky-note bg-yellow-200 w-72 h-72 flex content-center items-center">
                     <h1 className = "text-6xl text-center w-full">Welcome to my Portfolio</h1>
                 </div>
             </div>
-            <div className="flex w-full items-center">
+            <div id="about" className="flex w-full items-center">
                 <img className = "w-3/6" src="./src/assets/Headshot.JPG"/>
                 <div className = "sticky-note flex flex-wrap w-3/4 h-1/4 content-center items-center bg-white 0 m-10">
                     <div className = "pin-container flex justify-between w-full">
@@ -25,7 +49,7 @@ function Home() {
             <div className = "flex flex-wrap content-center items-center justify-center">
                 <div className = "w-full flex justify-center">
                     <div className = "sticky-note bg-cyan-300 w-72 h-72 flex content-center items-center mb-12">
-                        <h1 className= "w-screen text-center text-6xl">Coding Projects</h1>
+                        <h1 id="coding-projects" className= "w-screen text-center text-6xl">Coding Projects</h1>
                     </div>
                 </div>
                 <Project_Preview projectName={"Pixel Harvester"} projectImg={"src/assets/Pixel_Harvester.png"} projectCopy={
@@ -43,6 +67,13 @@ function Home() {
                 <Project_Preview projectName={"Exercise Generator"} projectImg={"src/assets/Exercise_Planner.png"} projectCopy={
                     "My first group project for the Flatiron School was an exercise generator that feeds from a public exercise API. We used React and vanilla CSS to create the front end. The site allows you to filter exercises and then save them to a workout plan at the bottom of the page. "
                 } pageLink = "/exercise_generator"/>
+            </div>
+            <div id="personal-projects" className = "flex flex-wrap content-center items-center justify-center">
+                <div className = "w-full flex justify-center">
+                    <div className = "sticky-note bg-pink-400 w-72 h-72 flex content-center items-center mb-12">
+                        <h1 id="coding-projects" className= "w-screen text-center text-6xl">Personal Projects</h1>
+                    </div>
+                </div>
             </div>
         </div>
     )
