@@ -24,7 +24,7 @@ function Home() {
             <Carousel />
             <div className = "flex flex-wrap content-center items-center justify-center">
                 <div className = "w-full flex justify-center">
-                    <div className = "sticky-note bg-yellow-200 w-72 h-72 flex content-center items-center mb-12">
+                    <div className = "sticky-note bg-cyan-300 w-72 h-72 flex content-center items-center mb-12">
                         <h1 className= "w-screen text-center text-6xl">Coding Projects</h1>
                     </div>
                 </div>
