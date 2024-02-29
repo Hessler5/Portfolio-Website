@@ -8,6 +8,10 @@
   font-style: normal;
 }
 
+img {
+  max-width: none;
+}
+
 body {
   background-image: url("src/assets/pexels-monstera-production-7794364.jpeg");
 }
@@ -57,15 +61,26 @@ h1, h2, h3, h4, h5, a {
   font-style: normal;
 }
 
-/* carousel functionality */
+/* carousel functionality */ 
 @keyframes slide {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-5172px);
+  }
+} 
+
+/* @media (max-width:480px)  {
+  @keyframes slide {
   from {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-5420px);
+    transform: translateX(-3000px);
   }
 }
+} */
 
 .carousel-container{
   overflow: hidden;
@@ -99,5 +114,45 @@ h1, h2, h3, h4, h5, a {
   border-style: dashed;
   border-width: 3px;
   border-color: black;
+}
+
+#html {
+  height: 384px;
+  width: 696px;
+}
+
+#react {
+  height: 384px;
+  width: 768px;
+}
+
+#tailwind {
+  height: 384px;
+  width: 768px;
+}
+
+#bootstrap {
+  height: 384px;
+  width: 691px;
+}
+
+#python {
+  height: 384px;
+  width: 384px;
+}
+
+#flask {
+  height: 384px;
+  width: 384px;
+}
+
+#sql {
+  height: 384px;
+  width: 548px;
+}
+
+#git {
+  height: 384px;
+  width: 613px;
 }
 

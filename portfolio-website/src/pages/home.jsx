@@ -35,9 +35,9 @@ function Home() {
                     <h1 className = "text-6xl text-center w-full">Welcome to my Portfolio</h1>
                 </div>
             </div>
-            <div id="about" className="flex w-full items-center">
-                <img className = "w-3/6" src="./src/assets/Headshot.JPG"/>
-                <div className = "sticky-note flex flex-wrap w-3/4 h-1/4 content-center items-center bg-white 0 m-10">
+            <div id="about" className="flex max-[480px]:flex-wrap w-full items-center">
+                <img className = "w-3/6 max-[480px]:w-screen" src="./src/assets/Headshot.JPG"/>
+                <div className = "sticky-note flex flex-wrap w-3/4 h-1/4 content-center items-center bg-white 0 m-10 max-[480px]:w-screen">
                     <div className = "pin-container flex justify-between w-full">
                         <div className = "pin-surround"><div className = "outer-left-pin"><div className = "inner-left-pin"></div></div></div>
                         <div className = "pin-surround"><div className = "outer-right-pin"><div className = "inner-right-pin"></div></div></div>

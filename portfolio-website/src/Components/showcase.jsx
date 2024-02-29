@@ -12,12 +12,12 @@ function Showcase( {videoSource, websiteLink = false, BlogLink = false, GithubLi
         })
     return (
         <div className = "flex flex-wrap justify-center">
-            <video className = "mt-5 w-5/6" controls>
+            <video className = "mt-5 w-5/6 max-[480px]:w-screen" controls>
                 <source src={videoSource} type="video/mp4"/>
             </video>
-            <div className = "my-5 flex justify-evenly w-screen">
+            <div className = "mt-5 flex flex-wrap justify-evenly w-screen">
                 {websiteLink || BlogLink || GithubLink || APILink?
-                <div className = "sticky-note bg-yellow-200 w-72 h-72 flex flex-wrap content-center items-center">
+                <div className = "mb-5 sticky-note bg-yellow-200 w-72 h-72 flex flex-wrap content-center items-center">
                     {websiteLink?
                     <h3 className="w-full text-center my-8 text-4xl underline"><a href={websiteLink}>Website Link</a></h3>:
                     null}
@@ -33,7 +33,7 @@ function Showcase( {videoSource, websiteLink = false, BlogLink = false, GithubLi
                 </div>:
                 null}
                 {!techStack.length == 0?
-                <div className = "sticky-note bg-cyan-300 w-72 h-72 flex content-start flex-wrap justify-center">
+                <div className = "mb-5 sticky-note bg-cyan-300 w-72 h-72 flex content-start flex-wrap justify-center">
                     <h3 className = "h-12 mt-6 font-bold text-center w-full text-4xl">Tech Stack</h3>
                     <ul className = "ml-3 list-disc">
                         {techStackList}
@@ -41,7 +41,7 @@ function Showcase( {videoSource, websiteLink = false, BlogLink = false, GithubLi
                 </div>:
                 null}
                 {!libraries.length == 0?
-                <div className = "sticky-note bg-lime-400 w-72 h-72 flex content-start flex-wrap justify-center">
+                <div className = "mb-5 sticky-note bg-lime-400 w-72 h-72 flex content-start flex-wrap justify-center">
                     <h3 className = "h-12 mt-6 font-bold text-center w-full text-4xl">Libraries</h3>
                     <ul className = "ml-3 list-disc">
                         {librariesList}
@@ -49,13 +49,13 @@ function Showcase( {videoSource, websiteLink = false, BlogLink = false, GithubLi
                 </div>:
                 null}
             </div>
-            <div className = "sticky-note w-5/6 p-5 bg-white mb-6 flex flex-wrap jusify-center">
+            <div className = "sticky-note w-5/6 p-5 bg-white mb-6 flex flex-wrap jusify-center max-[480px]:w-screen max-[480px]:p-0">
                 <div className = "pin-container flex justify-between w-full">
                     <div className = "pin-surround"><div className = "outer-left-pin"><div className = "inner-left-pin"></div></div></div>
-                    <h1 className = "m-5 text-center w-full text-6xl">{projectTitle}</h1>
+                    <h1 className = "m-5 text-center w-full text-6xl max-[480px]:m-0">{projectTitle}</h1>
                     <div className = "pin-surround"><div className = "outer-right-pin"><div className = "inner-right-pin"></div></div></div>
                 </div>
-                <p className="text-center">{description}</p>
+                <p className="text-center max-[480px]:p-5">{description}</p>
                 <div className = "flex w-full justify-center">
                     <div className = "m-3 outer-shell w-32 h-12">
                         <div className = "mid-shell w-full h-full">
