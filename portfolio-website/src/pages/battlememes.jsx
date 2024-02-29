@@ -1,12 +1,13 @@
 import React from "react";
 import Showcase from "../Components/showcase";
+import battleMemesVid from "../assets/Battle_Memes.mp4"
 
 
 function BattleMemes() {
     return (
         <>
             <Showcase 
-            videoSource={"src/assets/Battle_Memes.mp4"}
+            videoSource={battleMemesVid}
             GithubLink={"https://github.com/Hessler5/phase-4-project"}
             techStack={["HTML", "CSS", "JavaScript", "React", "Python", "Flask"]}
             libraries={["React Router", "flask-cors", "flask-bcrypt", "Faker", "SQLAlchemy"]}

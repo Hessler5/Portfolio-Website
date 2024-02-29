@@ -1,12 +1,13 @@
 import React from "react";
 import Showcase from "../Components/showcase";
+import toyTanksVid from "../assets/Toy_Tanks.mp4"
 
 
 function ToyTanks() {
     return (
         <>
             <Showcase 
-            videoSource={"src/assets/Toy_Tanks.mp4"}
+            videoSource={toyTanksVid}
             BlogLink={"https://dev.to/hessler5/tank-movement-in-pygame-l6h"}
             GithubLink={"https://github.com/Hessler5/Toys-Tanks"}
             techStack={["Python"]}

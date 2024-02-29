@@ -1,12 +1,13 @@
 import React from "react";
 import Showcase from "../Components/showcase";
+import cssColorSelectorVid from "../assets/CSS_Color_Selector.mp4";
 
 
 function CssColorSelector() {
     return (
         <>
             <Showcase 
-            videoSource={"src/assets/CSS_Color_Selector.mp4"}
+            videoSource={cssColorSelectorVid}
             websiteLink={"https://color-pallets-website.onrender.com/"}
             BlogLink={"https://dev.to/hessler5/rgb-vs-hex-colors-3f1i"}
             GithubLink={"https://github.com/Hessler5/phase-2-project"}

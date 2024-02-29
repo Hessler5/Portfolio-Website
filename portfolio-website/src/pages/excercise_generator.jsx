@@ -1,12 +1,13 @@
 import React from "react";
 import Showcase from "../Components/showcase";
+import exerciseGeneratorVid from "../assets/Exercise_Generator.mp4"
 
 
 function ExerciseGenerator() {
     return (
         <>
             <Showcase 
-            videoSource={"src/assets/Exercise_Generator.mp4"}
+            videoSource={exerciseGeneratorVid}
             websiteLink={"https://exercise-planner-lhcv.onrender.com/"}
             GithubLink={"https://github.com/Hessler5/phase-1-project"}
             APILink={"https://api-ninjas.com/api/exercises"}

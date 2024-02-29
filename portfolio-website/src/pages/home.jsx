@@ -2,11 +2,21 @@ import React, {useState} from "react";
 import Carousel from "../Components/carousel";
 import Project_Preview from "../Components/project_preview";
 import PersonalProject from "../Components/personal_projects";
+import aboutImg from "../assets/Headshot.png";
 import pixelHarvesterImg from "../assets/Pixel_Harvester.png";
-import battleMemesImg from "../assets/Battlememes.png"
+import battleMemesImg from "../assets/Battlememes.png";
 import toyTankImg from "../assets/Toy_Tanks.png";
 import cssSelectorImg from "../assets/CSS_Color_Selector.png";
 import exerciseGeneratorImg from "../assets/Exercise_Planner.png"
+import denimPantsImg1 from "../assets/Denim_Pants_1.png"
+import denimPantsImg2 from "../assets/Denim_Pants_2.png"
+import denimPantsImg3 from "../assets/Denim_Pants_3.png"
+import sewingClassImg1 from "../assets/Sewing_Class_1.png"
+import sewingClassImg2 from "../assets/Sewing_Class_2.png"
+import sewingClassImg3 from "../assets/Sewing_Class_3.png"
+import sockPillowImg1 from "../assets/Sock_Pillows_1.png"
+import sockPillowImg2 from "../assets/Sock_Pillows_2.png"
+import sockPillowImg3 from "../assets/Sock_Pillows_3.png"
 
 function Home() {
     const [menuOpen, setMenuOpen] = useState(false)
@@ -41,7 +51,7 @@ function Home() {
                 </div>
             </div>
             <div id="about" className="flex max-[480px]:flex-wrap w-full items-center">
-                <img className = "w-3/6 max-[480px]:w-screen" src="./src/assets/Headshot.JPG"/>
+                <img className = "w-3/6 max-[480px]:w-screen" src={aboutImg}/>
                 <div className = "sticky-note flex flex-wrap w-3/4 h-1/4 content-center items-center bg-white 0 m-10 max-[480px]:w-screen">
                     <div className = "pin-container flex justify-between w-full">
                         <div className = "pin-surround"><div className = "outer-left-pin"><div className = "inner-left-pin"></div></div></div>
@@ -84,23 +94,23 @@ function Home() {
             <PersonalProject 
             projectTitle={"Scrap Denim Pants"}
             description={"Here is a pair of jeans I created from excess scrap left over from other projects."}
-            img1={"src/assets/Denim_Pants_1.jpg"}
-            img2={"src/assets/Denim_Pants_2.jpg"}
-            img3={"src/assets/Denim_Pants_3.jpg"}
+            img1={denimPantsImg1}
+            img2={denimPantsImg2}
+            img3={denimPantsImg3}
             />
             <PersonalProject 
             projectTitle={"Sewing Class"}
             description={"Here is a pair of jeans I created from excess scrap left over from other projects."}
-            img1={"src/assets/Sewing_Class_1.JPG"}
-            img2={"src/assets/Sewing_Class_2.JPG"}
-            img3={"src/assets/Sewing_Class_3.JPG"}
+            img1={sewingClassImg1}
+            img2={sewingClassImg2}
+            img3={sewingClassImg3}
             />
             <PersonalProject 
             projectTitle={"Sock Pillows!"}
             description={"Using excess sample socks at my previous job I fashioned pillows by cutting up and then re-sewing them together."}
-            img1={"src/assets/Sock_Pillows_2.JPG"}
-            img2={"src/assets/Sock_Pillows_1.JPG"}
-            img3={"src/assets/Sock_Pillows_3.JPG"}
+            img1={sockPillowImg1}
+            img2={sockPillowImg2}
+            img3={sockPillowImg3}
             />
         </div>
     )
