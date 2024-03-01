@@ -100,7 +100,7 @@ function Home() {
             />
             <PersonalProject 
             projectTitle={"Sewing Class"}
-            description={"Here is a pair of jeans I created from excess scrap left over from other projects."}
+            description={"At my previous job I taught several sewing classes on how to 'darn' or mend holes in socks."}
             img1={sewingClassImg1}
             img2={sewingClassImg2}
             img3={sewingClassImg3}
